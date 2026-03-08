@@ -1,3 +1,24 @@
+@font-face {
+    font-family: "Geometria Light";
+    src: url("./fonts/geometria_light.woff2") format("woff2");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Geometria Medium";
+    src: url("./fonts/geometria_medium.woff2") format("woff2");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Geometria Bold";
+    src: url("./fonts/geometria_bold.woff2") format("woff2");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Klamp";
+    src: url("./fonts/klamp.woff2") format("woff2");
+    font-weight: normal;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -6,4 +27,5 @@
 .container {
     max-width: 500px;
     margin: 0 auto;
+    padding: 30px;
 }
