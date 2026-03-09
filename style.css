@@ -190,6 +190,7 @@ body {
 }
 
 .card__bio {
+    line-height: 2;
     font-size: var(--small-text);
     color: var(--text-color);
 }
@@ -315,7 +316,7 @@ body {
     }
 
     .card__bio {
-        line-height: 2;
+        
         font-size: 12px;
     }
 
