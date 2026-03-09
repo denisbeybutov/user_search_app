@@ -22,6 +22,8 @@
 :root {
     --main-color: #121B2E;
     --text-color: #E1E2E6;
+    --accent-color: #0278FE;
+    --card-color: #1E2947;
 }
 
 * {
@@ -38,6 +40,9 @@ body {
     max-width: 500px;
     margin: 0 auto;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .header {
@@ -56,23 +61,61 @@ body {
     text-transform: uppercase;
     font-size: 10px;
     letter-spacing: 3px;
-    position: relative;
     transition: transform .4s;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-.header__theme-switcher::after {
-    content: "";
-    background-image: url("./icons/sun.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    right: -25px;
-    top: -3px;
+.header__icon {
     width: 16px;
     height: 16px;
 }
 
 .header__theme-switcher:hover {
     transform: scale(1.1);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--card-color);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.search__icon {
+    width: 30px;
+    height: 30px;
+}
+
+.search__input {
+    background-color: transparent;
+    border: none;
+    font-family: "Klamp";
+    flex-grow: 1;
+}
+
+.search__input::placeholder {
+    color: var(--text-color);
+}
+
+.search__button {
+    background-color: var(--accent-color);
+    border: none;
+    padding: 10px;
+    color: var(--text-color);
+    font-family: "Klamp";
+    border-radius: 10px;
+    font-size: 12px;
 }
