@@ -24,11 +24,25 @@
     --text-color: #E1E2E6;
     --accent-color: #0278FE;
     --card-color: #1E2947;
+    --bio-color: #8E94A2;
+    
+    --border-radius: 10px;
+
+    --small-text: 11px;
 }
 
 * {
     padding: 0;
     margin: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 body {
@@ -83,8 +97,7 @@ body {
     justify-content: space-between;
     padding: 10px;
     background-color: var(--card-color);
-    border-radius: 10px;
-    width: 100%;
+    border-radius: var(--border-radius);
 }
 
 .wrapper {
@@ -121,6 +134,107 @@ body {
     padding: 10px;
     color: var(--text-color);
     font-family: "Klamp";
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     font-size: 12px;
 }
+
+.card {
+    padding: 30px;
+    background-color: var(--card-color);
+    border-radius: var(--border-radius);
+    font-family: "Klamp";
+    display: flex;
+    gap: 25px;
+}
+
+.card__avatar {
+    width: auto;
+    height: 80px;
+    border-radius: 50%;
+}
+.card__main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.card__name {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card__main-name {
+    font-size: 18px;
+}
+
+.card__joined {
+    font-size: var(--small-text);
+}
+
+.card__username {
+    font-size: var(--small-text);
+    color: var(--accent-color);
+}
+
+.card__bio {
+    font-size: var(--small-text);
+    color: var(--bio-color);
+}
+
+.card__activity {
+    background-color: var(--main-color);
+    border-radius: var(--border-radius);
+    padding: 15px 20px;
+    display: flex;
+    gap: 70px;
+}
+
+.card__activity-name {
+    font-size: 9px;
+}
+
+.card__repos,
+.card__followers,
+.card__following {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.card__contacts {
+    display: flex;
+    gap: 50px;
+}
+
+.card__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card__link:hover {
+    color: var(--bio-color);
+}
+
+.card__link {
+    font-size: var(--small-text);
+}
+
+.card__icon {
+    width: 14px;
+}
+
