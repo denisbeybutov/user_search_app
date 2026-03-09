@@ -262,7 +262,81 @@ body {
         left: 110px;
     }
 }
-/*
+
 @media (max-width: 768px) {
-    
-} */
+    .container {
+        max-width: 320px;
+    }
+
+    .header__logo {
+        font-size: 24px;
+    }
+
+    .header__theme-switcher {
+        font-size: 12px;
+    }
+
+    .wrapper {
+        gap: 2px;
+    }
+
+    .search__input {
+        font-size: 12px;
+    }
+
+    .card {
+        padding: 35px 25px;
+    }
+
+    .card__activity {
+        gap: 40px;
+        justify-content: space-between;
+        padding-inline: 40px;
+        text-align: center;
+    }
+
+    .card__repos,
+    .card__followers,
+    .card__following {
+        gap: 7px;
+    }
+
+    .card__avatar {
+        height: 60px;
+    }
+
+    .card__joined {
+        bottom: 5px;
+        left: 90px;
+    }
+
+    .card__main {
+        gap: 24px;
+    }
+
+    .card__bio {
+        line-height: 2;
+        font-size: 12px;
+    }
+
+    .card__contacts {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card__name {
+        padding-top: 0;
+        gap: 3px;
+    }
+
+    .card__main-name {
+        font-size: 16px;
+    }
+
+    .card__icon {
+        width: 20px;
+    }
+    .card__link {
+        font-size: 12px;
+    }
+} 
