@@ -104,6 +104,11 @@ body {
     border: none;
     font-family: "Klamp";
     flex-grow: 1;
+    color: var(--text-color);
+}
+
+.search__input:focus {
+    outline: none;
 }
 
 .search__input::placeholder {
