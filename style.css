@@ -22,6 +22,7 @@
 :root {
     --main-color: #121B2E;
     --text-color: #E1E2E6;
+    --button-color: #E1E2E6;
     --accent-color: #0278FE;
     --card-color: #1E2947;
     --bio-color: #8E94A2;
@@ -30,6 +31,14 @@
 
     --small-text: 11px;
 }
+
+.white-color-theme {
+    --main-color: #F4F8FF;
+    --card-color: #FFFEFE;
+    --text-color: #496A9B;
+    --button-color: #FFFEFE;
+
+} 
 
 * {
     padding: 0;
@@ -64,6 +73,12 @@ body {
     font-size: 16px;
     display: flex;
     justify-content: space-between;
+}
+
+.header__text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .header__logo {
@@ -126,16 +141,23 @@ body {
 
 .search__input::placeholder {
     color: var(--text-color);
+    opacity: .7;
 }
 
 .search__button {
     background-color: var(--accent-color);
     border: none;
     padding: 10px;
-    color: var(--text-color);
+    color: var(--button-color);
     font-family: "Klamp";
     border-radius: var(--border-radius);
     font-size: 12px;
+}
+
+.search__button:hover {
+    background-color: #0360ca;
+    color: #b6b7ba;
+    cursor: pointer;
 }
 
 .card {
@@ -251,6 +273,9 @@ body {
     width: 14px;
 }
 
+.box-shadow {
+    box-shadow: 2px 4px 20px 5px rgb(142, 148, 162, .2);
+}
 
 @media (max-width: 1024px) {
     .container {
