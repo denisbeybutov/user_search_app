@@ -22,7 +22,9 @@
 :root {
     --main-color: #121B2E;
     --text-color: #E1E2E6;
-    --button-color: #E1E2E6;
+    --button-color: #E1E2E6; 
+    --button-color-click: #0360ca;
+    --button-text-color-click: #b6b7ba;
     --accent-color: #0278FE;
     --card-color: #1E2947;
     --bio-color: #8E94A2;
@@ -37,6 +39,8 @@
     --card-color: #FFFEFE;
     --text-color: #496A9B;
     --button-color: #FFFEFE;
+    --button-color-click: #94c0f2;
+    --button-text-color-click: #373839;
 
 } 
 
@@ -155,8 +159,8 @@ body {
 }
 
 .search__button:hover {
-    background-color: #0360ca;
-    color: #b6b7ba;
+    background-color: var(--button-color-click);
+    color: var(--button-text-color-click);
     cursor: pointer;
 }
 
