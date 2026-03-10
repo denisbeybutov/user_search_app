@@ -232,17 +232,25 @@ body {
     gap: 10px;
 }
 
-.card__link:hover {
+.card__link:hover  {
     color: var(--bio-color);
 }
 
 .card__link {
     font-size: var(--small-text);
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .card__icon {
     width: 14px;
 }
+
+.card__svg-icon {
+    width: 14px;
+}
+
 
 @media (max-width: 1024px) {
     .container {
@@ -335,6 +343,9 @@ body {
     }
 
     .card__icon {
+        width: 20px;
+    }
+    .card__svg-icon {
         width: 20px;
     }
     .card__link {
